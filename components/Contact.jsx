@@ -71,7 +71,7 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-            <div className="social-icons flex flex-row space-x-8">
+            <div className="social-icons flex content-center justify-center space-x-8">
               <a
                 target="_blank"
                 href={userData.socialLinks.facebook}
@@ -114,7 +114,10 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg  p-4 flex flex-col">
+          <form
+            className="form rounded-lg  p-4 flex flex-col"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
               Your Name
             </label>
@@ -145,7 +148,7 @@ export default function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+              className="bg-blue-500 rounded-md mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
             >
               Send Message
             </button>
