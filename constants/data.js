@@ -26,14 +26,14 @@ const userData = {
       company: "LOWE's India Pvt. Ltd.",
       year: "2021",
       companyLink: "https://lowes.com",
-      desc: "Catered to business and consumer needs in developing multiple applications on lowes.ca website in the cart/checkout/customers/payments section.",
+      desc: "Catered to business and consumer needs in developing multiple web applications and features on lowes.ca website migrated from azure to GCP using MFE architecture in the cart/checkout/customers/payments section.",
     },
     {
       title: "Associate Software Engineer",
       company: "LOWE's India Pvt. Ltd.",
       year: "2020",
       companyLink: "https://lowes.com",
-      desc: "Catered to business and consumer needs in developing multiple applications on lowes.ca website in the cart/checkout/customers/payments section.",
+      desc: "Developed robust and scalable web applications for the azure hosted platform of lowes.ca website.",
     },
     {
       title: "Internship",
@@ -64,7 +64,8 @@ const userData = {
       desc: "Scored a CGPA of 9.8 in the 10th standard.",
     },
   ],
-  resumeUrl: "",
+  resumeUrl:
+    "https://drive.google.com/file/d/1IYfg-3W-uC1j46XslWMNxmonW7uZKKXL/view?usp=sharing",
   socialLinks: {
     twitter: "https://twitter.com/Vishwasrv",
     linkedin: "https://www.linkedin.com/in/vishwas-r-valke-a3149349/",
