@@ -10,8 +10,8 @@ export default function Hero() {
     <div className="flex flex-row justify-center items-start">
       {/* Text container */}
 
-      <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
-        <RoughNotationGroup show={true}>
+      <RoughNotationGroup show={true}>
+        <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
           <RainbowHighlight color={colors[0]}>
             <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
               Developer.
@@ -32,8 +32,8 @@ export default function Hero() {
               Coder.
             </h1>
           </RainbowHighlight>
-        </RoughNotationGroup>
-      </div>
+        </div>
+      </RoughNotationGroup>
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
         <div className="w-3/4 ">
