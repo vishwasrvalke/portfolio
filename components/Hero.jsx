@@ -7,7 +7,7 @@ import userData from "../constants/data";
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
   return (
-    <div className="flex flex-row justify-center items-start overflow-hidden">
+    <div className="flex flex-row justify-center items-start">
       {/* Text container */}
 
       <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
