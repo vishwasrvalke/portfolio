@@ -11,13 +11,12 @@ export default function Footer() {
             <p>&copy; Vishwas R Valke. All Rights Reserved.</p>
           </div>
           <div>
-            {/* Support me by keeping this in the footer, please. :) */}
             <p>
               Developed by
               <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
                 <a
                   className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
-                  href="https://vishwasrvalke.com"
+                  href="https://portfolio-git-main-vishwasrvalke.vercel.app/about"
                   target="_blank"
                 >
                   Vishwas R Valke

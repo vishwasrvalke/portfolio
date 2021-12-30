@@ -9,7 +9,6 @@ export default function Projects() {
           Projects
         </h1>
       </div>
-      {/* Grid starts here */}
       <div className="bg-[#F1F1F1] dark:bg-gray-900">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, idx) => (
@@ -34,7 +33,7 @@ const ProjectCard = ({ title, link, imgUrl, number }) => {
         <div className="h-72 object-cover">
           <img
             src={imgUrl}
-            alt="portfolio"
+            alt="project"
             className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
           />
         </div>

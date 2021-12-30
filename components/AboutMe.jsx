@@ -21,7 +21,6 @@ export default function AboutMe() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
         <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto gap-y-20 gap-x-20">
-          {/* Social Buttons */}
           <div className="inline-flex flex-col">
             <div>
               <h1 className="text-xl font-semibold text-gray-700 dark:text-gray-200">
@@ -55,7 +54,6 @@ export default function AboutMe() {
                 and I would love to work for you.
               </p>
             </div>
-            {/* Social Links */}
             <h1 className="text-xl font-semibold text-gray-700 mt-8 dark:text-gray-200">
               Social Links
             </h1>
@@ -77,7 +75,7 @@ export default function AboutMe() {
                 <a
                   href={userData.socialLinks.twitter}
                   className="flex flex-row items-center space-x-4 group"
-                  target="__blank"
+                  target="_blank"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -114,7 +112,6 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          {/* Text area */}
           <div className="col-span-1 md:col-span-2">
             {userData.about.description?.map((desc, idx) => (
               <p
@@ -133,6 +130,36 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
                 alt="javascript"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tailwind/tailwind.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="tailwindcss"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dotnet/dotnet.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="dotnet"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="postgresql"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="python"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/webpack/webpack.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="webpack"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/azure/azure.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="azure"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png"
@@ -158,6 +185,11 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
                 className="h-20 w-20 mx-4 my-4"
                 alt="css"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="scss"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
