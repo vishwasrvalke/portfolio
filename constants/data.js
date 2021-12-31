@@ -36,7 +36,7 @@ const userData = {
     {
       title: "Associate Software Engineer",
       company: "LOWE's India Pvt. Ltd.",
-      year: "2020",
+      year: "2019",
       companyLink: "https://www.lowes.ca",
       desc: "Developed robust and scalable web applications for the azure hosted platform of the lowes.ca Canada website.",
     },
