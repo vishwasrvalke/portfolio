@@ -15,7 +15,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+    <div className="max-w-6xl  mx-auto px-4 py-10">
       <div className="flex  md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
@@ -23,7 +23,7 @@ export default function Navbar() {
               <h1 className="font-semibold text-xl dark:text-gray-100">
                 {userData.name}
               </h1>
-              <p className="text-base font-light text-gray-500 dark:text-gray-300">
+              <p className="text-base font-normal text-gray-500 dark:text-gray-300">
                 {userData.designation}
               </p>
             </a>

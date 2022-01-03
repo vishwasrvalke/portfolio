@@ -5,79 +5,51 @@ import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "../constants/data";
 
 export default function Hero() {
-  const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6"];
+  const colors = ["#54C2CC", "#359CA5", "#23787F", "#10555B"];
   return (
     <>
+      <div className="mx-20 pt-10  text-center mb-5">
+        <div className="text-6xl text-shadow-blue text-gray-600 dark:text-gray-200 lg:font-bold lg:inline ">
+          I am{" "}
+        </div>
+        <span className="text-6xl text-[#54C2CC] lg:font-bold">Vishwas</span>
+      </div>
       <div className="flex flex-row justify-center items-start">
         <RoughNotationGroup show={true}>
           <div className="w-full md:w-1/2 mx-auto text-center md:text-left lg:p-20">
             <RainbowHighlight color={colors[0]}>
-              <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-500 dark:text-gray-200 my-2">
                 Developer.
               </h1>
             </RainbowHighlight>
             <RainbowHighlight color={colors[1]}>
-              <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="text-4xl md:text-6xl font-bold  text-gray-400 dark:text-gray-200 my-2">
                 Software Engineer.
               </h1>
             </RainbowHighlight>
             <RainbowHighlight color={colors[2]}>
-              <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-300 dark:text-gray-200 my-2">
                 Programmer.
               </h1>
             </RainbowHighlight>
             <RainbowHighlight color={colors[3]}>
-              <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-200 dark:text-gray-200 my-2">
                 Coder.
               </h1>
             </RainbowHighlight>
           </div>
         </RoughNotationGroup>
-        <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
-          <div className="w-1/2">
-            <img src={userData.avatarUrl} alt="avatar" className=" shadow" />
-            <div className="flex flex-row justify-between mt-4">
-              <div className="flex flex-row space-x-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-arrow-90deg-up"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
-                  />
-                </svg>
-                <p className="font-mono">That's me</p>
-              </div>
-            </div>
-          </div>
+        <div className="hidden lg:block relative w-full md:w-1/2 mb-20">
+          <img
+            src={userData.avatarUrl}
+            alt="avatar"
+            className="float-left lg:px-40"
+          />
         </div>
       </div>
       <div className="flex justify-center p-2 lg:hidden">
         <div>
-          <img src={userData.avatarUrl} alt="avatar" className=" shadow" />
-          <div className="flex flex-row justify-between mt-4">
-            <div className="flex flex-row space-x-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                className="bi bi-arrow-90deg-up"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"
-                />
-              </svg>
-              <p className="font-mono">That's me</p>
-            </div>
-          </div>
+          <img src={userData.avatarUrl} alt="avatar" />
         </div>
       </div>
     </>

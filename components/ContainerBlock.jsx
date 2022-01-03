@@ -42,9 +42,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-800 w-full">
+      <main className="max-w-full dark:bg-gray-800">
         <Navbar />
-        <div>{children}</div>
+        <div className="dark:bg-[#293241]">{children}</div>
         <Footer />
       </main>
     </div>

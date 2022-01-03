@@ -3,10 +3,10 @@ import userData from "../constants/data";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-        <div className="h-0.5 w-full  dark:bg-gray-700"></div>
-        <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
+    <div className="bg-gray-300  dark:bg-gray-700">
+      <div className="max-w-6xl mx-auto px-10 py-10 md:h-4 p-20 ">
+        <div className="w-full  dark:bg-gray-700"></div>
+        <div className="flex flex-col space-y-4 items-center md:space-y-0 md:flex-row justify-between">
           <div>
             <p>&copy; Vishwas R Valke. All Rights Reserved.</p>
           </div>
@@ -15,7 +15,7 @@ export default function Footer() {
               Developed by
               <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
                 <a
-                  className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
+                  className="hover:bg-[#54C2CC] rounded-md px-2 py-1  hover:text-gray-50"
                   href="https://portfolio-git-main-vishwasrvalke.vercel.app/about"
                   target="_blank"
                 >

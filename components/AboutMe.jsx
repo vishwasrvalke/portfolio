@@ -4,8 +4,8 @@ import userData from "../constants/data";
 export default function AboutMe() {
   return (
     <section className=" dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48  dark:bg-gray-800">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+      <div className="max-w-6xl mx-auto dark:bg-gray-800">
+        <h1 className=" text-5xl text-gray-600 dark:text-white md:text-9xl font-bold py-20 text-center md:text-left">
           About Me.
         </h1>
       </div>
@@ -122,7 +122,7 @@ export default function AboutMe() {
               </p>
             ))}
 
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+            <h1 className="bg-[#54C2CC] text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
@@ -200,6 +200,11 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                 className="h-20 w-20 mx-4 my-4"
                 alt="react"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/redux/redux.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="redux"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
