@@ -1,15 +1,35 @@
 import React from "react";
 import userData from "../constants/data";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
+        e.target,
+        process.env.USER_ID
+      )
+      .then((response) => {
+        console.log(response?.status, response?.text);
+        alert("Message sent successfully!");
+        e.target.reset();
+      })
+      .catch((err) => {
+        alert("Message failed to send. Please try again.");
+        console.log(err);
+      });
+  };
   return (
-    <>
+    <section className="mb-4 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto antialiased">
         <h1 className=" text-5xl text-gray-600 dark:text-white md:text-9xl font-bold py-20 text-center md:text-left">
           Contact
         </h1>
       </div>
-      <div className="relative z-10 rounded-md shadow-md bg-[#10555B] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mt-4">
+      <div className="relative z-10 rounded-md shadow-md bg-[#10555B] p-4 md:p-10 lg:p-20 max-w-6xl mx-auto -mt-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="md:ml-4">
             <header>
@@ -116,7 +136,7 @@ export default function Contact() {
           </div>
           <form
             className="form rounded-lg  p-4 flex flex-col"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <label htmlFor="name" className="text-sm text-white mx-4">
               Your Name
@@ -124,7 +144,7 @@ export default function Contact() {
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-[#54C2CC]"
-              name="name"
+              name="from_name"
             />
             <label htmlFor="email" className="text-sm text-white mx-4 mt-4">
               Email
@@ -132,7 +152,7 @@ export default function Contact() {
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-[#54C2CC]"
-              name="email"
+              name="from_email"
             />
             <label htmlFor="message" className="text-sm text-white mx-4 mt-4">
               Message
@@ -152,6 +172,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </>
+    </section>
   );
 }

@@ -11,18 +11,16 @@ export default function Footer() {
             <p>&copy; Vishwas R Valke. All Rights Reserved.</p>
           </div>
           <div>
-            <p>
-              Developed by
-              <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
-                <a
-                  className="hover:bg-[#54C2CC] rounded-md px-2 py-1  hover:text-gray-50"
-                  href="https://portfolio-git-main-vishwasrvalke.vercel.app/about"
-                  target="_blank"
-                >
-                  Vishwas R Valke
-                </a>
-              </div>
-            </p>
+            Developed by
+            <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
+              <a
+                className="hover:bg-[#54C2CC] rounded-md px-2 py-1  hover:text-gray-50"
+                href="https://portfolio-git-main-vishwasrvalke.vercel.app/about"
+                target="_blank"
+              >
+                Vishwas R Valke
+              </a>
+            </div>
           </div>
           <div className="space-x-4 flex flex-row items-center">
             <a
