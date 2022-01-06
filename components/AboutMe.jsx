@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "../constants/data";
+import { RainbowHighlight } from "./RainbowHighlight";
 
 export default function AboutMe() {
   return (
@@ -28,12 +29,14 @@ export default function AboutMe() {
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 For any sort help / enquiry, shoot a {""}
-                <a
-                  href={`mailto:${userData.email}`}
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
-                >
-                  mail
-                </a>
+                <RainbowHighlight color={"#54C2CC"}>
+                  <a
+                    href={`mailto:${userData.email}`}
+                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
+                  >
+                    mail
+                  </a>
+                </RainbowHighlight>
                 and I will get back. I swear.
               </p>
             </div>
@@ -44,13 +47,15 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 I am looking for a job currently, If you see me as a good fit,
                 check my {""}
-                <a
-                  href={userData.resumeUrl}
-                  target="_blank"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
-                >
-                  CV
-                </a>
+                <RainbowHighlight color={"#54C2CC"}>
+                  <a
+                    href={userData.resumeUrl}
+                    target="_blank"
+                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
+                  >
+                    CV
+                  </a>
+                </RainbowHighlight>
                 and I would love to work for you.
               </p>
             </div>
