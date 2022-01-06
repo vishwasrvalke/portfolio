@@ -1,1 +1,1 @@
-Find my portfolio on https://portfolio-git-main-vishwasrvalke.vercel.app
+Find my portfolio on https://vishwasrvalke.netlify.app
