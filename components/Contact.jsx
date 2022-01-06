@@ -5,22 +5,26 @@ import emailjs from "@emailjs/browser";
 export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        e.target,
-        process.env.USER_ID
-      )
-      .then((response) => {
-        console.log(response?.status, response?.text);
-        alert("Message sent successfully!");
-        e.target.reset();
-      })
-      .catch((err) => {
-        alert("Message failed to send. Please try again.");
-        console.log(err);
-      });
+    if (e?.target?.from_email && e?.target?.message && e?.target?.from_email) {
+      emailjs
+        .sendForm(
+          process.env.SERVICE_ID,
+          process.env.TEMPLATE_ID,
+          e.target,
+          process.env.USER_ID
+        )
+        .then((response) => {
+          console.log(response?.status, response?.text);
+          alert("Message sent successfully!");
+          e.target.reset();
+        })
+        .catch((err) => {
+          alert("Message failed to send. Please try again.");
+          console.log(err);
+        });
+    } else {
+      alert("Please fill in all fields.");
+    }
   };
   return (
     <section className="mb-4 dark:bg-gray-800">
