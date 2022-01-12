@@ -1,6 +1,5 @@
 import React from "react";
 import userData from "../constants/data";
-import { RainbowHighlight } from "./RainbowHighlight";
 
 export default function AboutMe() {
   return (
@@ -28,15 +27,13 @@ export default function AboutMe() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort help / enquiry, shoot a {""}
-                <RainbowHighlight color={"#54C2CC"}>
-                  <a
-                    href={`mailto:${userData.email}`}
-                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
-                  >
-                    mail
-                  </a>
-                </RainbowHighlight>
+                For any sort of help / enquiry, shoot a {""}
+                <a
+                  href={`mailto:${userData.email}`}
+                  className="text-gray-800  rounded-md px-2 py-1 bg-[#54C2CC] border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2 "
+                >
+                  mail
+                </a>
                 and I will get back. I swear.
               </p>
             </div>
@@ -47,15 +44,13 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 I am looking for a job currently, If you see me as a good fit,
                 check my {""}
-                <RainbowHighlight color={"#54C2CC"}>
-                  <a
-                    href={userData.resumeUrl}
-                    target="_blank"
-                    className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
-                  >
-                    CV
-                  </a>
-                </RainbowHighlight>
+                <a
+                  href={userData.resumeUrl}
+                  target="_blank"
+                  className="text-gray-800 rounded-md px-2 py-1 bg-[#54C2CC] border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
+                >
+                  CV
+                </a>
                 and I would love to work for you.
               </p>
             </div>

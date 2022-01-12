@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import userData from "../constants/data";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {
+  const [values, setFormValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const handleNameChange = (e) => {
+    setFormValues({ ...values, name: e.target.value });
+  };
+  const handleEmailChange = (e) => {
+    setFormValues({ ...values, email: e.target.value });
+  };
+  const handleMessageChange = (e) => {
+    setFormValues({ ...values, message: e.target.value });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (e?.target?.from_email && e?.target?.message && e?.target?.from_email) {
+    if (values.email && values.message && values.name) {
       emailjs
         .sendForm(
           process.env.SERVICE_ID,
@@ -17,6 +31,7 @@ export default function Contact() {
           console.log(response?.status, response?.text);
           alert("Message sent successfully!");
           e.target.reset();
+          setFormValues({ name: "", email: "", message: "" });
         })
         .catch((err) => {
           alert("Message failed to send. Please try again.");
@@ -149,6 +164,8 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-[#54C2CC]"
               name="from_name"
+              value={values.name}
+              onChange={handleNameChange}
             />
             <label htmlFor="email" className="text-sm text-white mx-4 mt-4">
               Email
@@ -157,6 +174,8 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-[#54C2CC]"
               name="from_email"
+              value={values.email}
+              onChange={handleEmailChange}
             />
             <label htmlFor="message" className="text-sm text-white mx-4 mt-4">
               Message
@@ -166,6 +185,8 @@ export default function Contact() {
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-[#54C2CC]"
               name="message"
+              value={values.message}
+              onChange={handleMessageChange}
             ></textarea>
             <button
               type="submit"
