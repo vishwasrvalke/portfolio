@@ -9,7 +9,7 @@ const userData = {
   projects: [
     {
       title: "Portfolio",
-      link: "https://portfolio-git-main-vishwasrvalke.vercel.app/about",
+      link: "https://vishwasrvalke.netlify.app/",
       imgUrl: "/portfolio.png",
     },
     {
@@ -77,7 +77,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1IYfg-3W-uC1j46XslWMNxmonW7uZKKXL/view?usp=sharing",
+    "https://drive.google.com/file/d/1X85kjh1EYN-quX79Z-P43C9I_naNvjhB/view?usp=sharing",
   socialLinks: {
     twitter: "https://twitter.com/Vishwasrv",
     linkedin: "https://www.linkedin.com/in/vishwas-r-valke-a3149349/",
