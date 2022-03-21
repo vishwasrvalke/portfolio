@@ -23,6 +23,11 @@ const userData = {
       link: "https://documenter.getpostman.com/view/15932259/UVXkoasV",
       imgUrl: "/mock-payment-wallet-service.png",
     },
+    {
+      title: "Azure B2C AD integration with SPA React",
+      link: "https://azure-b2c.vercel.app",
+      imgUrl: "/azure-b2c.png",
+    },
   ],
   about: {
     title:
@@ -32,6 +37,13 @@ const userData = {
     ],
   },
   experience: [
+    {
+      title: "Software Engineer",
+      company: "Giant Eagle GCC India Pvt Ltd",
+      year: "2021",
+      companyLink: "https://www.gianteagle.com/",
+      desc: "Currently working on rebuilding the entire GetGo store platform from scratch using a modern techstack",
+    },
     {
       title: "Software Engineer",
       company: "LOWE's India Pvt. Ltd.",
