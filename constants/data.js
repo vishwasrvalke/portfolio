@@ -1,11 +1,11 @@
 const userData = {
   githubUsername: "vishwasrvalke",
   name: "Vishwas R Valke",
-  designation: "Web-App Developer",
+  designation: "Software Developer",
   avatarUrl: "/avatar.png",
   email: "vishwas8@gmail.com",
   phone: "+91 8310094206",
-  address: "Bangalore, Karnataka, India",
+  address: "Bengaluru, Karnataka, India",
   projects: [
     {
       title: "Portfolio",
@@ -38,11 +38,11 @@ const userData = {
   },
   experience: [
     {
-      title: "Software Engineer",
+      title: "Senior Software Engineer",
       company: "Giant Eagle GCC India Pvt Ltd",
-      year: "2021",
+      year: "2024",
       companyLink: "https://www.gianteagle.com/",
-      desc: "Currently working on rebuilding the entire GetGo store platform from scratch using a modern techstack",
+      desc: "Worked on rebuilding and scaling the entire GetGo ordering experience on the mobile and web using React Native as a hybrid mobile App and Next.jsv14 on the web leveraging GraphQL API's on a Node Service and DatoCMS to manage and serve content",
     },
     {
       title: "Software Engineer",
@@ -98,7 +98,7 @@ const userData = {
     "https://drive.google.com/file/d/1X85kjh1EYN-quX79Z-P43C9I_naNvjhB/view?usp=sharing",
   socialLinks: {
     twitter: "https://twitter.com/Vishwasrv",
-    linkedin: "https://www.linkedin.com/in/vishwas-r-valke-a3149349/",
+    linkedin: "https://www.linkedin.com/in/vishwasrv/",
     github: "https://github.com/vishwasrvalke",
     facebook: "https://facebook.com/Vishwasrv",
   },

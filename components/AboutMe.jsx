@@ -48,6 +48,7 @@ export default function AboutMe() {
                   href={userData.resumeUrl}
                   target="_blank"
                   className="text-gray-800 rounded-md px-2 py-1 bg-[#54C2CC] border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300 mr-2"
+                  rel="noreferrer"
                 >
                   CV
                 </a>
@@ -63,6 +64,7 @@ export default function AboutMe() {
                   href={userData.socialLinks.facebook}
                   className="flex flex-row items-center space-x-4 group"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -76,6 +78,7 @@ export default function AboutMe() {
                   href={userData.socialLinks.twitter}
                   className="flex flex-row items-center space-x-4 group"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -89,6 +92,7 @@ export default function AboutMe() {
                   href={userData.socialLinks.github}
                   className="flex flex-row items-center space-x-4 group"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -102,6 +106,7 @@ export default function AboutMe() {
                   href={userData.socialLinks.linkedin}
                   className="flex flex-row items-center space-x-4 group"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <div className="my-4">&rarr;</div>
                   <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
@@ -129,6 +134,7 @@ export default function AboutMe() {
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                 className="h-20 w-20 mx-4 my-4"
+                title="javascript"
                 alt="javascript"
               />
               <img
@@ -215,6 +221,16 @@ export default function AboutMe() {
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                 className="h-20 w-20 mx-4 my-4"
                 alt="mongodb"
+              />
+              <img
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react-native/react-native.png"
+                className="h-20 w-20 mx-4 my-4"
+                alt="react-native"
+              />
+              <img
+                src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/nextjs-icon.png"
+                className="h-18 w-[100px] mx-4 my-4"
+                alt="nextjs"
               />
             </div>
           </div>
